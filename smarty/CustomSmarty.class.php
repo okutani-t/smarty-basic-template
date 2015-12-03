@@ -1,8 +1,8 @@
 <?php
 // Smartyの読み込み
-require_once(__DIR__ . '/Autoloader.php');
+require_once(__DIR__ . "/Autoloader.php");
 // 自作クラスの読み込み
-require_once(__DIR__ . '/../ClassLoader.php');
+require_once(__DIR__ . "/../ClassLoader.php");
 
 /**
  * Smartyクラスを拡張して独自機能をつけたクラス
@@ -15,12 +15,12 @@ class CustomSmarty extends Smarty
     function __construct(){
         parent::__construct();
 
-        $this->setLeftDelimiter('#{');
-        $this->setRightDelimiter('}#');
+        $this->setLeftDelimiter("#{");
+        $this->setRightDelimiter("}#");
 
         // tplとコンパイルファイルの置き場所を変更できる
-        $this->setCompileDir(__DIR__ . './templates_c/');
-        $this->setTemplateDir(__DIR__ . '/../view/');
+        $this->setCompileDir(__DIR__ . "/templates_c/");
+        $this->setTemplateDir(__DIR__ . "/../view/");
 
         Smarty_Autoloader::register();
     }

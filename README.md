@@ -15,10 +15,10 @@ smartyを使うときに使うテンプレート
 // smartyの設定ファイル読み込み
 require_once(realpath(__DIR__) . "/smarty/CustomSmarty.class.php");
 
-$name = 'okutani';
+$name = "okutani";
 
 $obj = new StdClass();
-$obj->hello = 'こんにちは！';
+$obj->hello = "こんにちは！";
 
 $smarty = new CustomSmarty();
 $smarty->setSmartyParams(
@@ -69,8 +69,8 @@ private static function directories()
          array(
             // ここに読み込んでほしいディレクトリを足していく
             // /smartyを指定しないとSmarty.class.phpが読み込めない
-            $base . '/smarty',
-            $base . '/vendor/class',
+            $base . "/smarty",
+            $base . "/vendor/class",
         );
     }
 

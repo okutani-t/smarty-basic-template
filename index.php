@@ -2,10 +2,10 @@
 // smartyの設定ファイル読み込み
 require_once(__DIR__ . "/smarty/CustomSmarty.class.php");
 
-$name = 'okutani';
+$name = "okutani";
 
 $obj = new StdClass();
-$obj->hello = 'こんにちは！';
+$obj->hello = "こんにちは！";
 
 $smarty = new CustomSmarty();
 $smarty->setSmartyParams(

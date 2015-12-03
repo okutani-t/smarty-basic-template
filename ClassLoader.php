@@ -44,8 +44,8 @@ class ClassLoader
              array(
                 // ここに読み込んでほしいディレクトリを足していく
                 // /smartyを指定しないとSmarty.class.phpが読み込めない
-                $base . '/smarty',
-                $base . '/vendor/class',
+                $base . "/smarty",
+                $base . "/vendor/class",
             );
         }
 
@@ -55,4 +55,4 @@ class ClassLoader
 }
 
 // 実行
-spl_autoload_register(array('ClassLoader', 'loadClass'));
+spl_autoload_register(array("ClassLoader", "loadClass"));
