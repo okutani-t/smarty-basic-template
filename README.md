@@ -4,6 +4,10 @@ smartyを使うときに使うテンプレート
 
 直でsmartyを配置しているので古くなったら置き換えなければいけない→comporser検討
 
+↓参考↓
+
+[[PHP] Smartyの導入手順まとめ | vdeep](http://vdeep.net/php-smarty)
+
 ## 使い方
 
 配置してtemplatesとindex.phpを書き換えていけばOK
